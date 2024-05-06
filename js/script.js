@@ -51,3 +51,9 @@ $(document).ready(function () {
         submitForm();
     });
 });
+
+
+let socket = io();
+socket.on('number', (message) => {
+    console.log('random number: ' + message);
+});
